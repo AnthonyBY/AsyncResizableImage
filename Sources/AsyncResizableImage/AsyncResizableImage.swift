@@ -52,7 +52,7 @@ public struct AsyncResizableImage<ImageView: View, PlaceholderView: View>: View 
         self.placeholder = placeholder
     }
 
-    var body: some View {
+    public var body: some View {
         VStack {
             if let uiImage = image {
                 content(Image(uiImage: uiImage))
