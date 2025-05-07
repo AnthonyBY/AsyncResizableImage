@@ -52,6 +52,9 @@ struct ContentView: View {
 }
 ```
 
+Or you can just copy the file [`AsyncResizableImage`](https://github.com/AnthonyBY/AsyncResizableImage/blob/main/Sources/AsyncResizableImage/AsyncResizableImage.swift) to your project.
+
+Enjoy
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
