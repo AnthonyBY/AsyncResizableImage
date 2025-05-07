@@ -31,16 +31,18 @@ import SwiftUI
 /// ```
 ///
 @MainActor
-struct AsyncResizableImage<ImageView: View, PlaceholderView: View>: View {
-    var url: URL?
-    var targetSize: CGSize?
+public struct AsyncResizableImage<ImageView: View, PlaceholderView: View>: View {
+    public var url: URL?
+    public var targetSize: CGSize?
 
-    @ViewBuilder var content: (Image) -> ImageView
-    @ViewBuilder var placeholder: () -> PlaceholderView
+    @ViewBuilder public var content: (Image) -> ImageView
+    @ViewBuilder public var placeholder: () -> PlaceholderView
+
+    @State public var image: UIImage? = nil
 
     @State var image: UIImage? = nil
 
-    init(
+    public init(
         url: URL?,
         targetSize: CGSize? = nil,
         @ViewBuilder content: @escaping (Image) -> ImageView,
