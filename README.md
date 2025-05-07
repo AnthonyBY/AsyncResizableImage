@@ -14,7 +14,7 @@ A SwiftUI view that asynchronously downloads, cache and optionally resizes an im
 Add the following to your `Package.swift` dependencies:
 
 ```swift
-.package(url: "https://github.com/YOUR_USERNAME/AsyncResizableImage.git", from: "1.0.0")
+.package(url: "https://github.com/AnthonyBY/AsyncResizableImage.git", from: "1.0.0")
 ```
 
 Then add `"AsyncResizableImage"` to your target dependencies:
