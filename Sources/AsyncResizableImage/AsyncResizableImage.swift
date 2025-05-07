@@ -40,8 +40,6 @@ public struct AsyncResizableImage<ImageView: View, PlaceholderView: View>: View 
 
     @State public var image: UIImage? = nil
 
-    @State var image: UIImage? = nil
-
     public init(
         url: URL?,
         targetSize: CGSize? = nil,
